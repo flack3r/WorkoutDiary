@@ -4,13 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Scaffold
+import androidx.compose.material.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
-import my.workout.diary.ui.*
+import my.workout.diary.ui.ProfileScreen
 import my.workout.diary.ui.navigation.BottomNavBar
 import my.workout.diary.ui.navigation.NavigationGraph
 import my.workout.diary.ui.theme.WorkoutDiaryTheme
@@ -42,7 +42,7 @@ fun MainScreenView() {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    WorkoutDiaryTheme {
-        WorkoutCalendarScreen()
+    WorkoutDiaryTheme() {
+        ProfileScreen()
     }
 }
