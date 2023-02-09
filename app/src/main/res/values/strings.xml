@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name" translatable="false">WorkoutDiary</string>
+    <string name="workout_menu">workout history</string>
+    <string name="diet_menu">diet</string>
+    <string name="profile_menu">profile</string>
+</resources>

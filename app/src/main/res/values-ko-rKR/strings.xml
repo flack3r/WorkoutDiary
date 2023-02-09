@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WorkoutDiary</string>
+    <string name="workout_menu">운동기록</string>
+    <string name="diet_menu">식단</string>
+    <string name="profile_menu">프로필</string>
+</resources>
