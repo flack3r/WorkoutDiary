@@ -12,7 +12,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import my.workout.diary.ui.ProfileScreen
 import my.workout.diary.ui.navigation.BottomNavBar
-import my.workout.diary.ui.navigation.NavigationGraph
+import my.workout.diary.ui.navigation.BottomNavigationGraph
 import my.workout.diary.ui.theme.WorkoutDiaryTheme
 
 class MainActivity : ComponentActivity() {
@@ -34,7 +34,7 @@ fun MainScreenView() {
         bottomBar = { BottomNavBar(navController = navController) }
     ) {
         Box(Modifier.padding(it)){
-            NavigationGraph(navController = navController)
+            BottomNavigationGraph(navController = navController)
         }
     }
 }
