@@ -25,9 +25,10 @@ fun BottomNavBar(navController: NavController) {
         BottomNavItem.ProfileMenu
     )
 
-    val navBackStackEntry by navController.currentBackStackEntryAsState()
-    val currentRoute = navBackStackEntry?.destination?.route
     NavigationBar(modifier = Modifier.fillMaxWidth()){
+        val navBackStackEntry by navController.currentBackStackEntryAsState()
+        val currentRoute = navBackStackEntry?.destination?.route
+
         items.forEach { item ->
             NavigationBarItem(
                 icon = {
