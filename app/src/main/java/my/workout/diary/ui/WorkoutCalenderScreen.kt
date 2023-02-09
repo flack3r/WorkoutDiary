@@ -3,15 +3,14 @@ package my.workout.diary.ui
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material3.*
+import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.substring
@@ -133,13 +132,4 @@ fun getWeekPageTitle(week: Week): String {
             "${firstDate.yearMonth} ~ ${lastDate.yearMonth}"
         }
     }
-}
-
-@Composable
-fun NavigationIcon(onBackClick: () -> Unit) {
-        Icon(
-            tint = Color.White,
-            imageVector = Icons.Default.ArrowBack,
-            contentDescription = "Back",
-        )
 }
