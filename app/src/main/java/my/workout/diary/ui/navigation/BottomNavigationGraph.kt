@@ -10,7 +10,7 @@ import my.workout.diary.ui.WorkoutCalendarScreen
 
 
 @Composable
-fun NavigationGraph(navController: NavHostController) {
+fun BottomNavigationGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
         startDestination = BottomNavItem.WorkoutCalenderMenu.screenRoute
